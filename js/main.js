@@ -7,7 +7,7 @@ $(document).ready(() => {
 });
 
 function getComics(searchText){
-  axios.get("http://gateway.marvel.com/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=" + searchText + "&issueNumber=1&orderBy=issueNumber%2ConsaleDate&limit=10&ts=1&apikey=9235b7495fcfa520bb895d2c13143831&hash=16822e4bb4711764eacabd97c8210e8a")
+  axios.get("http://gateway.marvel.com/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=" + searchText + "&issueNumber=1&orderBy=issueNumber%2ConsaleDate&limit=10&ts=1&apikey=f917950afd0593f2083bb727ed14c809&hash=906dda46ba6aba7da422a2c6756aaebc")
   .then((response) => {
     console.log(response);
     let comics = response.data.data.results;
